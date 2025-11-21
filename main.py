@@ -466,7 +466,8 @@ print(f"""
    - Result: {"REJECT H0" if p_value_one_tailed < 0.05 else "FAIL TO REJECT H0"}
    - p-value: {p_value_one_tailed:.4f}
    - Sample mean: {time_spent_all.mean():.2f} hours
-   - Conclusion: {"Average significantly exceeds 15 hours" if p_value_one_tailed < 0.05 else "No significant evidence that average exceeds 15 hours"}
+   - Conclusion: {"Average significantly exceeds 15 hours" if p_value_one_tailed < 0.05 else "No significant evidence that average "
+   "exceeds 15 hours"}
 
 4. Course Type and Completion Status (Chi-Squared Test):
    - Result: {"REJECT H0" if p_value_chi2 < 0.05 else "FAIL TO REJECT H0"}
